@@ -3,7 +3,7 @@ const cors = require ('cors');
 const mongoose = require ('mongoose');
 const department_controller = require('./department_controller')
 const product_controller = require('./product_controller')
-const meuBancoUrl = 'mongodb+srv://gustavo_antonelli:gustavo_antonelli@cluster0.dyuuc.mongodb.net/aplicacao_http?retryWrites=true&w=majority';
+const meuBancoUrl = 'mongodb+srv://gustavo_antonelli:<password>@cluster0.dyuuc.mongodb.net/aplicacao_http?retryWrites=true&w=majority';
 const app = express();
 
 mongoose.connect(meuBancoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
